@@ -1,0 +1,30 @@
+
+/* Visible breakpoints
+ * ===================
+ * Shows the currently active breakpoint in the top right of the screen, should
+ * only appear when running dev build.
+ */
+
+@if($env == 'development') {
+    body:before {
+        background-color: $gray-400;
+        border-bottom: 1px solid $gray-600;
+        border-left: 1px solid $gray-600;
+        color: $gray-800;
+        font: small-caption;
+        padding: 3px 6px;
+        pointer-events: none;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 100;
+        opacity: 0.6;
+
+        // Loop through the breakpoints that should be shown
+        @each $name, $width in $grid-breakpoints {
+            @include media-breakpoint-up($name) {
+                content: "#{$name}, #{$width}";
+            }
+        }
+    }
+}

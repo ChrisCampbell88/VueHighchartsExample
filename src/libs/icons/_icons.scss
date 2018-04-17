@@ -1,0 +1,32 @@
+
+// Icons
+// =====
+// We are using SVG icons that are compiled into a spritesheet using Gulp,
+// we then use SVG tags in our markup with a reference to the icon from the
+// spritesheet by using the 'xlink:href' parameter (see example below).
+//
+// The JS that handles the spritesheet injection can be found in /js/icons.js
+//
+// Resources:
+// http://css-tricks.com/svg-sprites-use-better-icon-fonts/
+// http://css-tricks.com/svg-symbol-good-choice-icons/
+//
+// Usage example:
+// <svg class="icon icon-xxxx"><use xlink:href="#icon-xxxx"></use></svg>
+
+
+// Hide the sprite sheet that will be injected into the DOM via JS
+.icons-svg {
+	display: none;
+}
+
+// Default icon styling
+.icon {
+	display: inline-block;
+	position: relative;
+	width:  1em;
+	height: 1em;
+	top: 0.25ex;
+	fill: currentColor;
+	pointer-events: none; // This fixes an issue in IE and Safari where SVG's using xlink dont trigger events in jQuery, which stops parent links from working
+}

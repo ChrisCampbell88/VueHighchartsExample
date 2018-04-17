@@ -1,0 +1,10 @@
+
+// Base
+// ====
+// All top level styles should be kept in this file, it should be quite minimal.
+
+
+html {
+	font-size: 62.5%; // Sets 1rem = 10px. http://snook.ca/archives/html_and_css/font-size-with-rem
+	text-size-adjust: 100%; // Ensure mobile and tablet browsers show text at the correct size
+}

@@ -1,0 +1,64 @@
+
+@import "variables";
+@import "mixins";
+
+// Layout
+// ======
+
+// Override bootstrap container gutters
+// ------------------------------------
+// Bootstrap gutters only have 1 size and dont change responsively, so we
+// override them here and set our own using breakpoints.
+$sw-mobile-gutter: 20px;
+$sw-tablet-gutter: 30px;
+$sw-desktop-gutter: 40px;
+$sw-site-max-width: 1290px + ($sw-desktop-gutter * 2); // 1290 + left gutter + right gutter
+
+.container,
+.container-fluid {
+    padding-left:  $sw-mobile-gutter;
+    padding-right: $sw-mobile-gutter;
+    max-width: $sw-site-max-width;
+
+    .row {
+        margin-left: -($sw-mobile-gutter / 2);
+        margin-right: -($sw-mobile-gutter / 2);
+    }
+
+    .row > [class^="col"] {
+        padding-left: $sw-mobile-gutter / 2;
+        padding-right: $sw-mobile-gutter / 2;
+    }
+
+    // Tablet styles
+    @include media-breakpoint-up(md) {
+        padding-left: $sw-tablet-gutter;
+        padding-right: $sw-tablet-gutter;
+
+        .row {
+            margin-left: -($sw-tablet-gutter / 2);
+            margin-right: -($sw-tablet-gutter / 2);
+        }
+
+        .row > [class^="col"] {
+            padding-left: $sw-tablet-gutter / 2;
+            padding-right: $sw-tablet-gutter / 2;
+        }
+    }
+
+    // Desktop styles
+    @include media-breakpoint-up(xl) {
+        padding-left: $sw-desktop-gutter;
+        padding-right: $sw-desktop-gutter;
+
+        .row {
+            margin-left: -($sw-desktop-gutter / 2);
+            margin-right: -($sw-desktop-gutter / 2);
+        }
+
+        .row > [class^="col"] {
+            padding-left: $sw-desktop-gutter / 2;
+            padding-right: $sw-desktop-gutter / 2;
+        }
+    }
+}

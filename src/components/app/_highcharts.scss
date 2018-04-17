@@ -1,0 +1,127 @@
+
+// Custom highcharts styles
+// ------------------------
+
+
+// Variables
+$color-0: $primary;
+$color-1: darken($primary, 20);
+$color-2: darken($primary, 40);
+$color-3: $secondary;
+$color-4: darken($secondary, 15);
+$color-5: darken($secondary, 30);
+$color-6: darken($secondary, 40);
+
+
+// Global styles
+// -------------
+// Chart container
+.highcharts-container {
+    font-family: $font-family-sans-serif;
+}
+
+// Title
+.highcharts-title {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+
+// Points (Can be overridden per chart)
+.highcharts-point {
+    &.highcharts-color-0 {
+        fill: $color-0;
+    }
+
+    &.highcharts-color-1 {
+        fill: $color-1;
+    }
+
+    &.highcharts-color-2 {
+        fill: $color-2;
+    }
+
+    &.highcharts-color-3 {
+        fill: $color-3;
+    }
+
+    &.highcharts-color-4 {
+        fill: $color-4;
+    }
+
+    &.highcharts-color-5 {
+        fill: $color-5;
+    }
+
+    &.highcharts-color-6 {
+        fill: $color-6;
+    }
+}
+
+
+// Lines between points
+.highcharts-line-series {
+    .highcharts-graph {
+        stroke-width: 2;
+    }
+
+    &.highcharts-color-0 .highcharts-graph {
+        stroke: $color-0;
+    }
+
+    &.highcharts-color-1 .highcharts-graph {
+        stroke: $color-1;
+    }
+
+    &.highcharts-color-2 .highcharts-graph {
+        stroke: $color-2;
+    }
+
+    &.highcharts-color-3 .highcharts-graph {
+        stroke: $color-3;
+    }
+
+    &.highcharts-color-4 .highcharts-graph {
+        stroke: $color-4;
+    }
+
+    &.highcharts-color-5 .highcharts-graph {
+        stroke: $color-5;
+    }
+
+    &.highcharts-color-6 .highcharts-graph {
+        stroke: $color-6;
+    }
+}
+
+
+// Legend
+.highcharts-legend {
+    .highcharts-color-0 .highcharts-point {
+        fill: $color-0;
+    }
+
+    .highcharts-color-1 .highcharts-point {
+        fill: $color-1;
+    }
+
+    .highcharts-color-2 .highcharts-point {
+        fill: $color-2;
+    }
+
+    .highcharts-color-3 .highcharts-point {
+        fill: $color-3;
+    }
+
+    .highcharts-color-4 .highcharts-point {
+        fill: $color-4;
+    }
+
+    .highcharts-color-5 .highcharts-point {
+        fill: $color-5;
+    }
+
+    .highcharts-color-6 .highcharts-point {
+        fill: $color-6;
+    }
+}

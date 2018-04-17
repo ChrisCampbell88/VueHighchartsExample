@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="">
+
+    <title>Highcharts - Test</title>
+
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="bundle.css">
+</head>
+
+<body>
+
+    <!-- App content START -->
+    <div class="container">
+
+        <!-- Vue app - START -->
+        <div id="app">
+
+            <br>
+
+            <!-- Line chart - START -->
+            <line-chart data-table="lineChartDataTable" chart-title="Line chart" chart-sub-title="Data pulled from table below."></line-chart>
+
+            <br>
+
+            <strong>Line chart data:</strong>
+            <table id="lineChartDataTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Balanced Option</th>
+                        <th>Industry median</th>
+                        <th>CPI Objective</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2008</td>
+                        <td>50000</td>
+                        <td>50000</td>
+                        <td>53000</td>
+                    </tr>
+                    <tr>
+                        <td>2009</td>
+                        <td>60000</td>
+                        <td>58000</td>
+                        <td>55000</td>
+                    </tr>
+                    <tr>
+                        <td>2010</td>
+                        <td>69000</td>
+                        <td>62000</td>
+                        <td>57500</td>
+                    </tr>
+                    <tr>
+                        <td>2011</td>
+                        <td>65000</td>
+                        <td>62000</td>
+                        <td>58000</td>
+                    </tr>
+                    <tr>
+                        <td>2012</td>
+                        <td>73000</td>
+                        <td>63000</td>
+                        <td>66000</td>
+                    </tr>
+                    <tr>
+                        <td>2013</td>
+                        <td>110000</td>
+                        <td>85000</td>
+                        <td>96000</td>
+                    </tr>
+                    <tr>
+                        <td>2014</td>
+                        <td>110000</td>
+                        <td>98000</td>
+                        <td>103000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Line chart - END -->
+
+
+
+            <br>
+            <br>
+            <br>
+
+
+
+            <!-- Donut chart - START -->
+            <donut-chart data-table="donutChartDataTable" chart-title="Donut chart" chart-sub-title="Data pulled from table below."></donut-chart>
+
+            <br>
+
+            <strong>Donut chart data:</strong>
+            <table id="donutChartDataTable" class="table">
+                <thead>
+                    <tr>
+                        <th>Australian Shares</th>
+                        <th>Overseas Shares</th>
+                        <th>Property</th>
+                        <th>Alternatives</th>
+                        <th>Cash</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>19.7%</td>
+                        <td>23.4%</td>
+                        <td>11.3%</td>
+                        <td>44%</td>
+                        <td>1.6%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Donut chart - END -->
+
+
+
+            <br>
+            <br>
+            <br>
+
+
+
+            <!-- Bar chart - START -->
+            <bar-chart data-table="barChartDataTable" chart-title="Bar chart" chart-sub-title="Data pulled from table below."></bar-chart>
+
+            <br>
+
+            <strong>Bar chart data:</strong>
+            <table id="barChartDataTable" class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Jane</th>
+                        <th>John</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Apples</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Pears</td>
+                        <td>2</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Plums</td>
+                        <td>5</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>Bananas</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Oranges</td>
+                        <td>2</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Bar chart - END -->
+
+
+        </div>
+        <!-- Vue app - END -->
+
+
+    </div>
+    <!-- App content END -->
+
+
+    <!-- JavaScript includes -->
+    <script src="bundle.js"></script>
+</body>
+
+</html>

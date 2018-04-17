@@ -1,0 +1,47 @@
+{
+  "name": "highcarts-test",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "autoprefixer": "^8.1.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "bootstrap": "^4.0.0",
+    "cross-env": "^5.1.4",
+    "css-loader": "^0.28.11",
+    "es6-promise": "^4.2.4",
+    "eslint": "^4.18.1",
+    "eslint-config-google": "^0.9.1",
+    "eslint-loader": "^2.0.0",
+    "express": "^4.16.3",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "highcharts": "^6.0.7",
+    "jquery": "^3.3.1",
+    "node-sass": "^4.7.2",
+    "popper.js": "^1.12.9",
+    "postcss-loader": "^2.1.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "vue": "^2.5.16",
+    "vue-loader": "^14.2.1",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.9",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-merge": "^4.1.2",
+    "webpack-svgstore-plugin": "^4.0.1"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config build/webpack.config.babel.js --env development --hot --inline --public cc.in.monkii.com:8080 --host 0.0.0.0",
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.babel.js --env production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://slsapp.com/git/monkii/monkii-bars.git"
+  },
+  "author": "Monkii",
+  "license": "ISC"
+}
